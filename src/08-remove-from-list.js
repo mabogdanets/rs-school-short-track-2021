@@ -15,10 +15,43 @@
  *   this.value = x;
  *   this.next = null;
  * }
+ * let list = {
+  value: 1,
+  next: {
+    value: 2,
+    next: {
+      value: 3, //==k
+      next: {
+        value: 4,
+        next: null
+      }
+    }
+  }
+};
  */
+/* let currentObj, currentObj;
+currentValue = l.value;
+currentObj = l.next;
+while(currentObj){
+  if (currentVal == k){
+    currentObj =
+  }
+  currentObj = currentObj.next;
+}
+*/
+function removeKFromList(/* l, k */) {
+  /* if (l === null) {
+    return null;
+  }
 
-function removeKFromList(l, k) {
-  return l.filter((val) => val !== k);
+  if (l.value === k) {
+    return removeKFromList(l.next, k);
+  }
+
+  const x = new ListNode(l.value);
+  x.next = removeKFromList(l.next, k);
+  return x; */
+  throw new Error('Not implemented');
 }
 
 module.exports = removeKFromList;
